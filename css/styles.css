@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
+/* body */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+/* end body */
 
 /* navbar */
 .navbar , .navbar-nav {
@@ -18,4 +25,11 @@
 .navbar-nav a:hover{
     color: rgb(91, 91, 219)  !important;
 }
+
 /* end navbar */
+
+
+/* about */
+
+
+/* end about */

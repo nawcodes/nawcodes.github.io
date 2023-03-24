@@ -4,9 +4,49 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rifal Nurjamil | Portofolio</title>
-  <link href="dist/output.css" rel="stylesheet">
+  <link href="dist/output.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
+  <!-- Header section -->
+  <header class="bg-transparent flex items-center w-full absolute top-0 left-0 z-10">
+    <div class="container">
+      <div class="flex items-center justify-between relative">
+        <div class="px-4">
+          <a href="#" class="font-bold text-primary text-lg block py-6 ">Rifal Nurjamil</a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" class="block absolute right-4 lg:hidden" name="hamburger" type="button">
+            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+          </button>
+
+          <nav id="nav-menu" class="hidden py-5 shadow-lg absolute w-full max-w-[250px] rounded-lg bg-white right-4 top-[80%] lg:block lg:static lg:shadow-none lg:rounded-none lg:max-w-full lg:bg-transparent">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="#home" class="text-base text-dark py-2 mx-5 group-hover:text-primary flex">Beranda</a>
+              </li>
+              <li class="group">
+                <a href="#about" class="text-base text-dark py-2 mx-5 group-hover:text-primary flex">Tentang saya</a>
+              </li>
+              <li class="group">
+                <a href="#clients" class="text-base text-dark py-2 mx-5 group-hover:text-primary flex">Client</a>
+              </li>
+              <li class="group">
+                <a href="#services" class="text-base text-dark py-2 mx-5 group-hover:text-primary flex">Service</a>
+              </li>
+              <li class="group">
+                <a href="#contact" class="text-base text-dark py-2 mx-5 group-hover:text-primary flex">Kontak</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- End Header section -->
 
   <!-- Hero section -->
   <section id="home" class="pt-36">
@@ -37,6 +77,8 @@
     </div>
   </section>
   <!-- end Hero section -->
+
+  <!-- About section -->
   <section id="home" class="pt-36 pb-32">
     <div class="container">
       <div class="flex flex-wrap">
@@ -78,9 +120,33 @@
       </div>
     </div>
   </section>
-  <!-- About section -->
+  <!-- End About section -->
+
+  <script>
+    // navbar
+    window.onscroll = () => {
+      const headerEl = document.querySelector('header');
+      const fixedNavValue = headerEl.offsetTop;
+
+      if(window.pageYOffset > fixedNavValue) {
+        headerEl.classList.add('navbar-fixed');
+      } else {
+        headerEl.classList.remove('navbar-fixed');
+      }
 
 
- 
+    }    
+
+    // hamburger menu
+    const hamburgerEl = document.getElementById('hamburger');
+    const navMenuEl = document.getElementById('nav-menu');
+    hamburgerEl.addEventListener('click', () => {
+      hamburgerEl.classList.toggle('hamburger-active');
+      navMenuEl.classList.toggle('hidden');
+      
+
+    });
+  </script>
+
 </body>
 </html>

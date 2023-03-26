@@ -1,530 +1,362 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rifal Nurjamil | Portofolio</title>
+  <link href="dist/output.css" rel="stylesheet" type="text/css">
+</head>
+<body>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!-- Header section -->
+  <header class="bg-transparent flex items-center w-full absolute top-0 left-0 z-10">
+    <div class="container">
+      <div class="flex items-center justify-between relative">
+        <div class="px-4">
+          <a href="#" class="font-bold text-primary text-lg block py-6 ">Rifal Nurjamil</a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" class="block absolute right-4 lg:hidden" name="hamburger" type="button">
+            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+          </button>
 
-    <!-- My Styles CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css">
-    <link rel="stylesheet" href="css/fontawesome/css/solid.css">
-    <link rel="stylesheet" href="css/fontawesome/css/brands.css">
-    <link rel="stylesheet" href="css/fontawesome/css/regular.css">
-
-
-    <title>Rifal Nurjamil -Portfolio</title>
-  </head>
-  <body>
-
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
-      <div class="container ">
-        <a class="navbar-brand " href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse  " id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link active" aria-current="page" href="#about">About</a>
-            <a class="nav-link active" aria-current="page" href="#product">Product</a>
-            <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
-            <a class="nav-link active" aria-current="page" href="#contact">Contact</a> 
-          </div>
+          <nav id="nav-menu" class="hidden py-5 shadow-lg absolute w-full max-w-[250px] rounded-lg bg-white right-4 top-[80%] lg:block lg:static lg:shadow-none lg:rounded-none lg:max-w-full lg:bg-transparent">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="#home" class="text-base text-dark py-2 mx-5 group-hover:text-primary flex">Beranda</a>
+              </li>
+              <li class="group">
+                <a href="#about" class="text-base text-dark py-2 mx-5 group-hover:text-primary flex">Tentang saya</a>
+              </li>
+              <li class="group">
+                <a href="#clients" class="text-base text-dark py-2 mx-5 group-hover:text-primary flex">Client</a>
+              </li>
+              <li class="group">
+                <a href="#services" class="text-base text-dark py-2 mx-5 group-hover:text-primary flex">Service</a>
+              </li>
+              <li class="group">
+                <a href="#contact" class="text-base text-dark py-2 mx-5 group-hover:text-primary flex">Kontak</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </nav>
-    <!-- end navbar -->
-
-
-
-    <!-- corousel slide  -->
-
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="image/slide-1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block text-white">
-              <section class="container bg-primary py-0  rounded">
-              <h5 class="">Dont Be A Programmer!</h5>
-              <p class="py-1 mb-n5">Be a problem solver!</p>
-            </section>
-            </div>
-          </div>
-
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="image/slide-3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block text-white">
-              <section class=" container bg-light py-0 text-dark rounded">
-              <h5 class="">Work Hard</h5>
-              <p class="py-1">Travel Hard</p>
-            </section>
-          </div>
-
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
     </div>
-    </div>
+  </header>
 
-    <!-- end corousel slide -->
-    
+  <!-- End Header section -->
 
-    <!-- About me -->
-      <section id="about">
-        <!-- header -->
-        <div class="container mt-5 mb-2">
-          <div class="row">
-            <div class="col-md">
-              <h1>About</h5>
-              <hr width="20%"  class="bg-info">
-            </div>
-          </div>
-          <div class="container">
-          <div class="row">
-            <!-- content 1 -->
-            <div class="col-lg-6 col-md-12">
-              <img src="image/nawcodes.jpg" width="100%" class="rounded  float-start" alt="..." style="box-shadow: -1px 10px 10px 0px rgba(0,0,0,0.1);">
-            </div>
-            <!-- content 2 -->
-            <div class="offset-lg-1 col-lg col-md mt-2">
-              <h2>Hello, Im Rifal Nurjamil</h5>
-              <p>You can call me rifal or nawi as a friend's call</p>
-              <p>A little about me, I like to learn new things in technology, I started in making or developing websites as a means of my hobby. Being a fullstack developer is one of my dreams.</p>
-              <h4>Skills</h4>
-              <hr>        
-              <div class="row mt-5 d-flex justify-content-beetween ">
-                
-                <!-- skill -->
-                <div class="col-lg col-md d-flex justify-content-start">
-                  <div>
-                    <img src="image/html-5.png" alt="" width="50"">
-                  </div>
-                  <div class="ms-3">
-                    <h3>HTML</h3>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half-alt"></i>
-                      <small class="text-muted d-block">Great Experiences</small>
-                  </div>
-                </div>
-                
-                <!-- skill -->
-                <div class="col-lg col-md col-sm d-flex justify-content-start">
-                  <div>
-                    <img src="image/iconfinder_badge-css-3_317756.png" alt="" width="50"">
-                  </div>
-                  <div class="ms-3">
-                    <h3>CSS</h3>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half-alt"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <small class="text-muted d-block">Standart Experiences</small>
-                  </div>
-                </div>
+  <!-- Hero section -->
+  <section id="home" class="pt-36">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full self-center px-4 lg:w-1/2">
+          <h1 class="text-base font-semibold text-primary lg:text-xl">Hi, Saya <span class="block font-bold text-black text-4xl mt-1">Rifal Nurjamil</span></h1>
+          <h2 class="font-medium text-slate-500 text-lg mb-1 lg:text-2xl">Backend developer</h2>
+          <p class="font-medium text-slate-400 mb-10 leading-relaxed">Fokus menekuni hobi yang disuka, dan mengembangkannya.</p>
 
-              </div>
-              <div class="row mt-5 d-flex justify-content-beetween">
-                
-                <!-- skill -->
-                <div class="col-lg col-md col-sm d-flex justify-content-start">
-                  <div>
-                    <img src="image/iconfinder_mysql_4691303.png" alt="" width="50"">
-                  </div>
-                  <div class="ms-3">
-                    <h3>SQL</h3>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half-alt"></i>
-                      <i class="far fa-star"></i>
-                      <small class="text-muted d-block">Experiences</small>
-                  </div>
-                </div>
-                
-                <!-- skill -->
-                <div class="col-lg col-md col-sm d-flex justify-content-start">
-                  <div>
-                    <img src="image/php.png" alt="" width="50"">
-                  </div>
-                  <div class="ms-3">
-                    <h3>PHP</h3>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <small class="text-muted d-block">Great Experiences</small>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-5 d-flex justify-content-beetween">
-                
-                <!-- skill -->
-                <div class="col-lg col-md col-sm d-flex justify-content-start">
-                  <div>
-                    <img src="image/iconfinder_codeigniter_1285072.png" alt="" width="50"">
-                  </div>
-                  <div class="ms-3">
-                    <h3>Codeigniter</h3>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                      <small class="text-muted d-block">Great Experiences</small>
-                  </div>
-                </div>
-                
-                <!-- skill -->
-                <div class="col-lg col-md col-sm d-flex justify-content-start">
-                  <div>
-                    <img src="image/iconfinder_Bootstrap_4923030.png" alt="" width="50"">
-                  </div>
-                  <div class="ms-3">
-                    <h3>Boostrap</h3>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                    <i class="far fa-star"></i>
-                    <small class="text-muted d-block">Experiences</small>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mt-5 d-flex justify-content-beetween">
-                
-               
-                
-                <!-- skill -->
-                <div class="col-lg col-md col-sm d-flex justify-content-start">
-                  <div>
-                    <img src="image/git.png" alt="" width="50"">
-                  </div>
-                  <div class="ms-3">
-                    <h3>GIT</h3>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <small class="text-muted d-block">Experiences</small>
-                  </div>
-                </div>
-              </div>
+          <a href="#" class="text-base font-semibold bg-primary rounded-md py-3 px-5 text-white hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out">Hubungi saya</a>
+        </div>
+        <div class="w-full self-end px-4 lg:w-1/2"">
+          <div class="relative mt-10 lg:mt-9 lg:right-0">
+            <img src="image/rifal-nurjamil.png" class="max-w-full mx-auto" width="400" height="400">
+            <span class="absolute lg:-bottom-3 -z-10 left-1/2 -translate-x-1/2 md:scale-125 -bottom-6">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="500" height="500">
+                <path fill="#14b8a6" d="M32.6,-56.7C43.5,-50.1,54.5,-44,62.1,-34.6C69.7,-25.2,73.8,-12.6,68.1,-3.3C62.4,6,46.7,12,40.9,24.4C35.1,36.9,39.2,55.9,34,66C28.8,76.2,14.4,77.6,4.7,69.4C-5,61.2,-9.9,43.5,-17.4,34.6C-24.8,25.8,-34.8,25.8,-44.5,21.5C-54.3,17.2,-63.8,8.6,-63.4,0.2C-63.1,-8.2,-52.8,-16.3,-43.8,-22.1C-34.9,-27.8,-27.4,-31.1,-20.3,-39.8C-13.2,-48.6,-6.6,-62.8,2.1,-66.5C10.8,-70.1,21.7,-63.2,32.6,-56.7Z" transform="translate(100 100) scale(1.0)" />
+              </svg>
               
-
-
-            </div>            
+            </span>
           </div>
-        </div>
-        </div>
-      </section>
-    <!-- end about me -->
+         
 
-    <!-- Experiences Work & Studies -->
-      <section id="experience" class="mt-5  py-5 bg-light">
-        <div class="container">
-            <div class="row">
-              <div class="col-md">
-                <h1>Experiences</h5>
-                <hr width="20%"  class="bg-info">
-              </div>
-            </div>
-            <div class="d-lg-flex d-md-flex flex-wrap ">
-              <div class="d-flex mx-lg-3 mt-2 mx-md-0">
-              <i class="fas fa-4x fa-school  p-3"></i>
-              <div class="ms-4">
-                <h4>2015 - 2018</h2>
-                <h5>SMK Technology Plus Padjajaran , Sukabumi</h5>
-                <h6>Computer Network Engineering</h6>
-              </div>
-              </div>
-              <div class="d-flex mx-lg-3 mt-2 mx-md-0">
-                <i class="fas fa-4x fa-building  p-3"></i>
-                <div class="ms-4">
-                  <h4>2017 Mei - jully 2017</h2>
-                  <h5>CV. Milenium Computer</h5>
-                  <h6>Intership, Hardware Engineering</h6>
-                </div>
-              </div>
-              <div class="d-flex mx-lg-3 mt-2 mx-md-0">
-                  <i class="fas fa-4x fa-building p-3"></i>
-                  <div class="ms-4">
-                    <h4>17 Nov 2020 - 31 March 2021 </h2>
-                    <h5>PT. Kidang Gesit , Cikidang Sukabumi West Jav </h5>
-                    <h6>Staff IT</h6>
-                  </div>
-              </div>
-              <div class="d-flex mx-lg-3 mt-2 mx-md-0">
-                    <i class="fas fa-4x fa-university  p-3"></i>
-                    <div class="ms-4">
-                      <h4>2018 - Now </h2>
-                      <h5>Nusaputra University Sukabumi</h5>
-                      <h6>Information System</h6>
-                    </div>
-              </div>
-            </div>
+        
         </div>
-      </section>
-    <!-- End Experiences Work & Studies -->
+      </div>
+    </div>
+  </section>
+  <!-- end Hero section -->
 
-     <!-- Product -->
-     <section id="product">
-      <!-- header -->
-      <div class="container mt-5 mb-2">
-        <div class="row">
-          <div class="col-md">
-            <h1>Product</h5>
-            <hr width="20%"  class="bg-info">
+  <!-- About section -->
+  <section id="home" class="pt-36 pb-32">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 mb-10 lg:w-1/2">
+          <h4 class="font-bold uppercase text-primary text-lg mb-2">Tentang Saya</h4>
+          <h2 class="font-bold lg:text-4xl text-3xl mb-5 max-w-md">Yuk, Hire di Nawcodes</h2>
+          <p class="font-medium text-base text-secondary max-w-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim voluptates aperiam autem eaque quos?</p>
+        </div>
+        <div class="w-full px-4 lg:w-1/2">
+          <h3 class="font-semibold text-dark lg:pt-9 lg:text-3xl text-2xl mb-4">Mari berteman</h3>
+          <p class="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quo accusantium, impedit minus harum natus iusto.</p>
+
+          <div class="flex">
+            <!-- Linkedin -->
+            <a href="#" target="_blank" class="w-9 h-9 mr-3 flex justify-center items-center border border-slate-300 rounded-full text-slate-600 hover:border-primary hover:text-white hover:bg-primary">
+              <svg role="img" class="fill-current" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601  0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+
+            <!-- Facebook -->
+
+            <a href="#" target="_blank" class="w-9 h-9 mr-3 flex justify-center items-center border border-slate-300 rounded-full text-slate-600 hover:border-primary hover:text-white hover:bg-primary">
+              <svg role="img" viewBox="0 0 24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+
+            <!-- Instagram -->
+
+            <a href="#" target="_blank" class="w-9 h-9 mr-3 flex justify-center items-center border border-slate-300 rounded-full text-slate-600 hover:border-primary hover:text-white hover:bg-primary">
+              <svg role="img" class="fill-current" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+            </a>
+
+            <!-- github -->
+
+            <a href="#" target="_blank" class="w-9 h-9 mr-3 flex justify-center items-center border border-slate-300 rounded-full text-slate-600 hover:border-primary hover:text-white hover:bg-primary">
+              <svg role="img" viewBox="0 0 24 24" class="fill-current" width="20"  xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+        
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- End About section -->
+
+  <!-- Portfolio section -->
+
+  <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="max-w-xl mx-auto text-center mb-16">
+          <h4 class="font-semibold text-primary text-lg mb-2 ">Portfolio</h4>
+          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">
+            Project Terbaru
+          </h2>
+
+          <div class="font-medium text-md text-secondary md:text-lg">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta illo vero fugit quo ipsam, tempora architecto.
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+        <div class="mb-12 p-4 md:w-1/3">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <img src="https://placehold.co/600x300" alt="" width="w-full">
+          </div>
+          <h3 class="font-semibold text-xl text-dark mt-5 mb-3">My Website</h3>
+          <p class="font-medium text-base text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima voluptate rem excepturi beatae exercitationem expedita.
+          </p>
+        </div>
+        <div class="mb-12 p-4 md:w-1/3">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <img src="https://placehold.co/600x300" alt="" width="w-full">
+          </div>
+          <h3 class="font-semibold text-xl text-dark mt-5 mb-3">My Website</h3>
+          <p class="font-medium text-base text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima voluptate rem excepturi beatae exercitationem expedita.
+          </p>
+        </div>
+        <div class="mb-12 p-4 md:w-1/3">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <img src="https://placehold.co/600x300" alt="" width="w-full">
+          </div>
+          <h3 class="font-semibold text-xl text-dark mt-5 mb-3">My Website</h3>
+          <p class="font-medium text-base text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima voluptate rem excepturi beatae exercitationem expedita.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Portfolio section -->
+
+  <!-- Clients -->
+  <section id="clients" class="pt-36 pb-32 bg-slate-700">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="mx-auto text-center mb-16">
+          <h4 class="font-semibold text-primary text-lg mb-2">Clients</h4>
+          <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">
+            Yang pernah bekerjasama
+          </h2>
+
+          <div class="font-medium text-md text-secondary md:text-lg">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta illo vero fugit quo ipsam, tempora architecto.
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full px-4">
+        <div class="flex flex-wrap justify-center items-center">
+          <a href="#" class="max-w-[120px] py-4 mx-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-6">
+            <img src="/image/kaggle.svg" alt="Kaggle" width="500">
+          </a>
+          <a href="#" class="max-w-[120px] py-4 mx-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-6">
+            <img src="/image/kaggle.svg" alt="Kaggle" width="500">
+          </a>
+          <a href="#" class="max-w-[120px] py-4 mx-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-6">
+            <img src="/image/kaggle.svg" alt="Kaggle" width="500">
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- End Clients -->
+
+  <!-- Contact -->
+  <section id="contact" class="pt-36 pb-32">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="max-w-xl mx-auto text-center mb-16">
+          <h4 class="font-semibold text-primary text-lg mb-2 ">Kontak</h4>
+          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">
+            Hubungi Saya
+          </h2>
+
+          <div class="font-medium text-md text-secondary md:text-lg">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta illo vero fugit quo ipsam, tempora architecto.
+          </div>
+        </div>
+      </div>
+
+      <form action="#">
+        <div class="w-full lg:mx-auto lg:w-2/3">
+          <div class="w-full md-8 px-4 mb-8">
+              <label for="Nama" class="text-base font-bold text-primary">Nama</label>
+              <input type="text" name="name" class="w-full p-2 text-dark bg-slate-200 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+          </div>
+          <div class="w-full md-8 px-4 mb-8">
+            <label for="Email" class="text-base font-bold text-primary">E-mail</label>
+            <input type="text" name="email" class="w-full p-2 text-dark bg-slate-200 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+          </div>
+          <div class="w-full md-8 px-4 mb-8">
+            <label for="Pesan" class="text-base font-bold text-primary">Pesan</label>
+            <textarea type="text" name="name" class="w-full p-2 text-dark bg-slate-200 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" rows="6"></textarea>
+          </div>
+          <div class="w-full px-4">
+              <button class="text-base bg-primary text-white rounded-md py-2 px-8 w-full hover:opacity-80 transition duration-300 hover:shadow-lg">Kirim</button> 
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </section>
+  <!-- End Contact -->
+
+  <!-- Footer  -->
+    <footer class="bg-dark pt-24 pb-12">
       <div class="container">
-        <div class="row ">
-          <div class="col-xl col-lg col-md-4 col-sm col-xs">
-            <div class="card border-primary">
-              <img src="https://source.unsplash.com/random/1200x720" class="card-img-top img-thumbnails" width="50">
-              <div class="card-body">
-                <h5 class="card-title">Resort / Hotel Management App</h5>
-                <small class="d-block text-muted">Naw Resort</small>
-                <p class="card-text">Naw resort is a hotel management application, which includes booking, reservation, key giving in the form of Qr-Codes, etc ...</p>
-                <div class="d-grid gap-2">
-                  <a href="#" class="btn btn-warning"  onclick="return confirm('Free version is maintenance, please comeback later');">Free</a>
-                  <a href="#" class="btn btn-primary" onclick="return confirm('The premium version is under development, Comeback later')" >Premium</a>
-                </div>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">...</small>
-              </div>
-            </div>
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+            <h2 class="font-bold text-4xl text-white mb-5">Nawcodes</h2>
+            <h3 class="font-bold text-2xl mb-2">Hubungi saya</h3>
+            <p class="text-base">nawcodes@gmail.com</p>
+            <p class="text-base">Jl. Padjajaran km 03, Kab Sukabumi</p>
+            <p class="text-base">Sukabumi, Jawa barat, Indonesia</p>
           </div>
-          <!-- <div class="col-xl col-lg col-md-4 col-sm col-xs">
-            <div class="card border-primary">
-              <img src="https://source.unsplash.com/random/800x1201" class="card-img-top img-thumbnails" width="50">
-              <div class="card-body">
-                <h5 class="card-title">Resort</h5>
-                <small class="d-block text-muted">Naw Resort</small>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores ratione illo error fugiat delectus est ullam nemo optio. Dolore laboriosam illum, quisquam reiciendis culpa necessitatibus sunt doloribus veritatis magni eos?</p>
-                <div class="d-grid gap-2">
-                  <button class="btn btn-warning" type="button">Free</button>
-                  <button class="btn btn-primary" type="button">Premium</button>
-                </div>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
+          <div class="w-full px-4 md:w-1/3 mb-12">
+            <h3 class="font-semibold text-white text-xl mb-5">Kategori servis</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a href="#" class="inline-block  text-base mb-2 hover:text-primary">Membuat Kostum Aplikasi Web</a>
+              </li>
+              <li>
+                <a href="#" class="inline-block  text-base mb-2 hover:text-primary">Membuat API</a>
+              </li>
+              <li>
+                <a href="#" class="inline-block  text-base mb-2 hover:text-primary">Memperbaiki Bug</a>
+              </li>
+            </ul>
+
           </div>
-          <div class="col-xl col-lg col-md-4 col-sm col-xs">
-            <div class="card border-primary">
-              <img src="https://source.unsplash.com/random/800x1202" class="card-img-top" width="200">
-              <div class="card-body">
-                <h5 class="card-title">Resort</h5>
-                <small class="d-block text-muted">Naw Resort</small>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores ratione illo error fugiat delectus est ullam nemo optio. Dolore laboriosam illum, quisquam reiciendis culpa necessitatibus sunt doloribus veritatis magni eos?</p>
-                <div class="d-grid gap-2">
-                  <button class="btn btn-warning" type="button">Free</button>
-                  <button class="btn btn-primary" type="button">Premium</button>
-                </div>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>   -->
+          <div class="w-full px-4 md:w-1/3 mb-12">
+            <h3 class="font-semibold text-white text-xl mb-5">Tautan</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a href="#home" class="inline-block  text-base mb-2 hover:text-primary">Beranda</a>
+              </li>
+              <li>
+                <a href="#about" class="inline-block  text-base mb-2 hover:text-primary">Tentang saya</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="inline-block  text-base mb-2 hover:text-primary">Portfolio</a>
+              </li>
+              <li>
+                <a href="#clients" class="inline-block  text-base mb-2 hover:text-primary">Klien</a>
+              </li>
+              <li>
+                <a href="#contact" class="inline-block  text-base mb-2 hover:text-primary">Kontak</a>
+              </li>
+            </ul>
+
+          </div>
         </div>
+
+        <div class="w-full pt-10 border-t border-slate-400">
+          <div class="flex justify-center ">
+            <!-- Linkedin -->
+            <a href="#" target="_blank" class="w-9 h-9 mr-3 flex justify-center items-center border border-slate-300 rounded-full text-slate-200 hover:border-primary hover:text-white hover:bg-primary">
+              <svg role="img" class="fill-current" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601  0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+
+            <!-- Facebook -->
+
+            <a href="#" target="_blank" class="w-9 h-9 mr-3 flex justify-center items-center border border-slate-300 rounded-full text-slate-200 hover:border-primary hover:text-white hover:bg-primary">
+              <svg role="img" viewBox="0 0 24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+
+            <!-- Instagram -->
+
+            <a href="#" target="_blank" class="w-9 h-9 mr-3 flex justify-center items-center border border-slate-300 rounded-full text-slate-200 hover:border-primary hover:text-white hover:bg-primary">
+              <svg role="img" class="fill-current" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+            </a>
+
+            <!-- github -->
+
+            <a href="#" target="_blank" class="w-9 h-9 mr-3 flex justify-center items-center border border-slate-300 rounded-full text-slate-200 hover:border-primary hover:text-white hover:bg-primary">
+              <svg role="img" viewBox="0 0 24 24" class="fill-current" width="20"  xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+          <p class="font-medium text-sm text-slate-100 text-center pt-5">Dibuat oleh <a href="" class="font-bold text-primary hover:text-slate-200 hover:opacity-70 transition duration-200"> Rifal Nurjamil </a></p>
+        </div> 
+
+
       </div>
-    </section>
-    <!-- End Product -->
-
-    <!-- Portfolio -->
-      <section id="portfolio" class="mt-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md">
-              <h1>Portfolio</h5>
-              <hr width="20%"  class="bg-info">
-            </div>
-          </div>
-          <div class="row d-lg-flex justify-content-beetween flex-wrap">
-            <div class="row m-1  ">
-              <div class="col-lg"><img src="https://source.unsplash.com/random/{400x401}" alt="" class="w-100 img-thumbnail"></div>
-              <div class="col-lg"><img src="https://source.unsplash.com/random/{400x402}" alt="" class="w-100 img-thumbnail"></div>
-              <div class="col-lg"><img src="https://source.unsplash.com/random/{400x403}" alt="" class="w-100 img-thumbnail"></div>
-              <div class="col-lg"><img src="https://source.unsplash.com/random/{400x404}" alt="" class="w-100 img-thumbnail"></div>
-            </div>
-            <div class="row m-1  ">
-              <div class="col-lg"><img src="https://source.unsplash.com/random/{400x405}" alt="" class="w-100 img-thumbnail"></div>
-              <div class="col-lg"><img src="https://source.unsplash.com/random/{400x406}" alt="" class="w-100 img-thumbnail"></div>
-              <div class="col-lg"><img src="https://source.unsplash.com/random/{400x407}" alt="" class="w-100 img-thumbnail"></div>
-              <div class="col-lg"><img src="https://source.unsplash.com/random/{400x408}" alt="" class="w-100 img-thumbnail"></div>
-            </div>
-            <div class="row m-1  ">
-              <div class="col-lg"><img src="https://source.unsplash.com/random/{400x409}" alt="" class="w-100 img-thumbnail"></div>
-              <div class="col-lg"><img src="https://source.unsplash.com/random/{400x410}" alt="" class="w-100 img-thumbnail"></div>
-              <div class="col-lg"><img src="https://source.unsplash.com/random/{400x411}" alt="" class="w-100 img-thumbnail"></div>
-              <div class="col-lg"><img src="https://source.unsplash.com/random/{400x412}" alt="" class="w-100 img-thumbnail"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-    <!-- End Portfolio -->
+    </footer>
+  <!-- End Footer -->
 
 
-     
-    
+  <script>
+    // navbar
+    window.onscroll = () => {
+      const headerEl = document.querySelector('header');
+      const fixedNavValue = headerEl.offsetTop;
 
-    <!-- contact -->
-      <section id="contact" class="contact mt-5 mb-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md">
-              <h1>Contact</h5>
-              <hr width="20%"  class="bg-info">
-            </div>
-          </div>
-          <form action="https://formspree.io/f/xzbybpog" method="post">
-            <div class="row">    
-              <div class="col">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1"  class="form-label">Email address</label>
-                  <input type="email" name="_replyto" class="form-control border border-primary"  aria-describedby="emailHelp" placeholder="example@mail.com">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Name</label>
-                  <input type="text" name="name" class="form-control border border-primary"  aria-describedby="emailHelp" placeholder="Samantha Johan">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                  <textarea name="message" class="form-control border border-primary" placeholder="Example: Hello fall, i want to recruit you for a job ..." rows="3"></textarea>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col d-grid">
-                <button type="submit" class="btn btn-primary">Send</button>
-              </div>
-            </div>
-          </form>
+      if(window.pageYOffset > fixedNavValue) {
+        headerEl.classList.add('navbar-fixed');
+      } else {
+        headerEl.classList.remove('navbar-fixed');
+      }
 
-          <div class="row mt-5  text-center">
-            <div class="col">
-                <a href="https://www.facebook.com/M.Nawawi.Mahbubi" class="mx-1"><i class="fab  fa-facebook" style="font-size: 24px;"></i></a>
-                
-                <a href="https://github.com/nawcodes" class="mx-1"  style="font-size: 24px;"><i class="fab  fa-github text-dark"></i></a>
-                
-                <a href="https://www.instagram.com/nawi_astnaw/" class="mx-1"  style="font-size: 24px;"><i class="fab  fa-instagram text-muted"></i></a>
-                
-                <a href="https://twitter.com/rifalnurchya" class="mx-1"  style="font-size: 24px;"><i class="fab  fa-twitter text-info"></i></a>
-                
-                <a href="https://api.whatsapp.com/send/?phone=085940775599&text&app_absent=0" class="mx-1"  style="font-size: 24px;"><i class="fab  fa-whatsapp text-success"></i></a>
 
-                <a href="https://www.linkedin.com/in/rifal-nurjamil-1178bb190/" class="mx-1"  style="font-size: 24px;"><i class="fab fa-linkedin"></i></a>
+    }    
 
-            </div>
-            
-          </div>  
-        </div>
-      </section>
-    <!-- end contact-->
+    // hamburger menu
+    const hamburgerEl = document.getElementById('hamburger');
+    const navMenuEl = document.getElementById('nav-menu');
+    hamburgerEl.addEventListener('click', () => {
+      hamburgerEl.classList.toggle('hamburger-active');
+      navMenuEl.classList.toggle('hidden');
       
 
-    <!-- footer -->
-    <section class="footer mt-1 bg-dark" >
-      <div class="container-fluid pt-5">
-        <div class="text-white">
-          <div class="row d-flex justify-content-beetween">
-              <div class="col text-light">
-                <h3>Nawcodes</h3>
-                <div class="info">
-                  <p>Contact :</p>
-                  <div class="email">
-                    <small>Send Email To:</small>
-                    <br>
-                    <small>Rifalnurchya@gmail.com</small>
-                    <br>
-                    <small>Nawcodes@gmail.com</small>
-                  </div>
-                  <br>
-                  <div class="Phone">
-                    <small>Telephone Or Whatsapp:</small>
-                    <br>
-                    <small>+6285640775599</small>
-                  </div>
-                </div>
-              </div>
-              <div class="col text-end">
-                <br>
-                <p>Thank you for visiting, please give suggestions and criticism for my portfolio, and don't forget to be happy</p>
-                <a href="https://www.facebook.com/M.Nawawi.Mahbubi" class="mx-1"><i class="fab  fa-facebook" style="font-size: 24px;"></i></a>
-                
-                <a href="https://github.com/nawcodes" class="mx-1"  style="font-size: 24px;"><i class="fab  fa-github text-white"></i></a>
-                
-                <a href="https://www.instagram.com/nawi_astnaw/" class="mx-1"  style="font-size: 24px;"><i class="fab  fa-instagram text-muted"></i></a>
-                
-                <a href="https://twitter.com/rifalnurchya" class="mx-1"  style="font-size: 24px;"><i class="fab  fa-twitter text-info"></i></a>
-                
-                <a href="https://api.whatsapp.com/send/?phone=085940775599&text&app_absent=0" class="mx-1"  style="font-size: 24px;"><i class="fab  fa-whatsapp text-success"></i></a>
+    });
+  </script>
 
-                <a href="https://www.linkedin.com/in/rifal-nurjamil-1178bb190/" class="mx-1"  style="font-size: 24px;"><i class="fab fa-linkedin"></i></a>
-
-              </div>
-          </div>
-          <hr>
-          <div class="row text-center">
-            <div class="col pb-3">
-               <a href="#" class="text-info" style="text-decoration: none;"> &#169; All rights reserved</a> Nawcodes&#8482; 2021
-          </div>
-          </div>
-        </div>
-      </div>
-      
-    </section>
-    <!-- end footer -->
-
-
-    
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
-  </body>
+</body>
 </html>

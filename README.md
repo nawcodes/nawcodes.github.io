@@ -1,5 +1,8 @@
 ﻿# nawcodes.github.io
 
+> To Run
+> npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+
 This is my Portfolio page,
 Divided into sections:
 - About

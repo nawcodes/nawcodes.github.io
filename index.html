@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html class="scroll-smooth">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -340,17 +340,28 @@
     </footer>
   <!-- End Footer -->
 
+  <!-- Back to top toogle -->
+    <a href="#home" id="backtop-toogle" class="fixed flex justify-center items-center bg-primary p-4 w-12 h-12 rounded-full z-[9999] bottom-4 right-4 hover:animate-pulse hidden">
+      <span class="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+    </a>
+  <!-- End toogle -->
+
 
   <script>
     // navbar
     window.onscroll = () => {
       const headerEl = document.querySelector('header');
       const fixedNavValue = headerEl.offsetTop;
+      const backtopToogle = document.querySelector('#backtop-toogle')
 
       if(window.pageYOffset > fixedNavValue) {
         headerEl.classList.add('navbar-fixed');
+        backtopToogle.classList.remove('hidden');
+
       } else {
         headerEl.classList.remove('navbar-fixed');
+        backtopToogle.classList.add('hidden');
+
       }
 
 
@@ -362,9 +373,14 @@
     hamburgerEl.addEventListener('click', () => {
       hamburgerEl.classList.toggle('hamburger-active');
       navMenuEl.classList.toggle('hidden');
-      
-
     });
+
+    window.addEventListener('click', function(e) {
+      if(e.target != hamburgerEl && e.target != navMenuEl) {
+        hamburgerEl.classList.remove('hamburger-active');
+        navMenuEl.classList.add('hidden');
+      }
+    })
 
     // services list 
     const servicesListEl = document.getElementById('services-list');

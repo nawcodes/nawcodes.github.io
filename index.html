@@ -51,7 +51,6 @@
               <li class="mt-2 flex items-center pl-8">
                 <div class="flex">
                   <span class="mr-2 text-sm text-slate-500 dark:text-white">Ligth</span>
-                  <input type="checkbox" class="" id="dark-toogle">
                   <label>
                     <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
                       <div class="toogle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
@@ -541,20 +540,6 @@
         navMenuEl.classList.add('hidden');
       }
     })
-      // hamburger menu
-      const hamburgerEl = document.getElementById("hamburger");
-      const navMenuEl = document.getElementById("nav-menu");
-      hamburgerEl.addEventListener("click", () => {
-        hamburgerEl.classList.toggle("hamburger-active");
-        navMenuEl.classList.toggle("hidden");
-      });
-
-      // services list
-      const servicesListEl = document.getElementById("services-list");
-      // add class all tag a
-      servicesListEl.querySelectorAll("a").forEach((el) => {
-        el.classList.add("link-disabled");
-      });
   
     // Dark mode
 

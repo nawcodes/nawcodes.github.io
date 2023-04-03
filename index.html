@@ -1,135 +1,91 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rifal Nurjamil | Portofolio</title>
-    <link href="dist/output.css" rel="stylesheet" type="text/css" />
-    <style>
-      a.link-disabled {
-        pointer-events: none;
-        cursor: default;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Header section -->
-    <header
-      class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
-      <div class="container">
-        <div class="relative flex items-center justify-between">
-          <div class="px-4">
-            <a href="#" class="block py-6 text-lg font-bold text-primary"
-              >Rifal Nurjamil</a
-            >
-          </div>
-          <div class="flex items-center px-4">
-            <button
-              id="hamburger"
-              class="absolute right-4 block lg:hidden"
-              name="hamburger"
-              type="button">
-              <span
-                class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out"></span>
-              <span
-                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
-            </button>
+<!DOCTYPE html >
+<html class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rifal Nurjamil | Portofolio</title>
+  <link href="dist/output.css" rel="stylesheet" type="text/css">
+  <style>
+    a.link-disabled {
+      pointer-events: none;
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
 
-            <nav
-              id="nav-menu"
-              class="absolute right-4 top-[80%] hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none">
-              <ul class="block lg:flex">
-                <li class="group">
-                  <a
-                    href="#home"
-                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary"
-                    >Beranda</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#about"
-                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary"
-                    >Tentang saya</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#portfolio"
-                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary"
-                    >Portfolio</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#clients"
-                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary"
-                    >Client</a
-                  >
-                </li>
-                <!-- <li class="group">
+  <!-- Header section -->
+  <header class="bg-transparent flex items-center w-full absolute top-0 left-0 z-10 dark:bg-dark dark:bg-opacity-50">
+    <div class="container">
+      <div class="flex items-center justify-between relative">
+        <div class="px-4">
+          <a href="#" class="font-bold text-primary text-lg block py-6 ">Rifal Nurjamil</a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" class="block absolute right-4 lg:hidden" name="hamburger" type="button">
+            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+          </button>
+
+          <nav id="nav-menu" class="hidden py-5 shadow-lg absolute w-full max-w-[250px] rounded-lg bg-white right-4 top-[80%] lg:block lg:static lg:shadow-none lg:rounded-none lg:max-w-full lg:bg-transparent dark:bg-dark dark:shadow-slate-400">
+            <ul class="block lg:flex lg:dark:bg-transparent">
+              <li class="group">
+                <a href="#home" class="text-base text-dark py-2 mx-5 group-hover:text-primary dark:text-white flex">Beranda</a>
+              </li>
+              <li class="group">
+                <a href="#about" class="text-base text-dark py-2 mx-5 group-hover:text-primary dark:text-white flex">Tentang saya</a>
+              </li>
+              <li class="group">
+                <a href="#portfolio" class="text-base text-dark py-2 mx-5 group-hover:text-primary dark:text-white flex">Portfolio</a>
+              </li>
+              <li class="group">
+                <a href="#clients" class="text-base text-dark py-2 mx-5 group-hover:text-primary dark:text-white flex">Client</a>
+              </li>
+              <!-- <li class="group">
                 <a href="#services" class="text-base text-dark py-2 mx-5 group-hover:text-primary flex">Service</a>
               </li> -->
-                <li class="group">
-                  <a
-                    href="#contact"
-                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary"
-                    >Kontak</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
+              <li class="group">
+                <a href="#contact" class="text-base text-dark py-2 mx-5 group-hover:text-primary dark:text-white flex">Kontak</a>
+              </li>
+              <li class="mt-2 flex items-center pl-8">
+                <div class="flex">
+                  <span class="mr-2 text-sm text-slate-500 dark:text-white">Ligth</span>
+                  <input type="checkbox" class="" id="dark-toogle">
+                  <label>
+                    <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                      <div class="toogle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                    </div>
+                  </label>
+                  <span class="ml-2 text-sm text-slate-500 dark:text-white">Dark</span>
+                </div>
+              <li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
     <!-- End Header section -->
 
-    <!-- Hero section -->
-    <section id="home" class="pt-36">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary lg:text-xl">
-              Hi, Saya
-              <span class="mt-1 block text-4xl font-bold text-black"
-                >Rifal Nurjamil</span
-              >
-            </h1>
-            <h2 class="mb-1 text-lg font-medium text-slate-500 lg:text-2xl">
-              Backend developer
-            </h2>
-            <p class="mb-10 font-medium leading-relaxed text-slate-400">
-              Fokus menekuni hobi yang disuka, dan mengembangkannya.
-            </p>
+  <!-- Hero section -->
+  <section id="home" class="pt-36 dark:bg-dark">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full self-center px-4 lg:w-1/2">
+          <h1 class="text-base font-semibold text-primary lg:text-xl ">Hi, Saya <span class="block font-bold text-black text-4xl mt-1 dark:text-white">Rifal Nurjamil</span></h1>
+          <h2 class="font-medium text-slate-500 dark:text-white text-lg mb-1 lg:text-2xl">Backend developer</h2>
+          <p class="font-medium text-slate-400 mb-10 leading-relaxed dark:text-white">Fokus menekuni hobi yang disuka, dan mengembangkannya.</p>
 
-            <a
-              href="#"
-              class="rounded-md bg-primary py-3 px-5 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
-              >Hubungi saya</a
-            >
-          </div>
-          <div class="w-full self-end px-4 lg:w-1/2"">
-          <div class="relative mt-10 lg:right-0 lg:mt-9">
-            <img
-              src="image/rifal-nurjamil.png"
-              class="mx-auto max-w-full"
-              width="400"
-              height="400" />
-            <span
-              class="absolute left-1/2 -bottom-6 -z-10 -translate-x-1/2 md:scale-125 lg:-bottom-3">
-              <svg
-                viewBox="0 0 200 200"
-                xmlns="http://www.w3.org/2000/svg"
-                width="500"
-                height="500">
-                <path
-                  fill="#14b8a6"
-                  d="M32.6,-56.7C43.5,-50.1,54.5,-44,62.1,-34.6C69.7,-25.2,73.8,-12.6,68.1,-3.3C62.4,6,46.7,12,40.9,24.4C35.1,36.9,39.2,55.9,34,66C28.8,76.2,14.4,77.6,4.7,69.4C-5,61.2,-9.9,43.5,-17.4,34.6C-24.8,25.8,-34.8,25.8,-44.5,21.5C-54.3,17.2,-63.8,8.6,-63.4,0.2C-63.1,-8.2,-52.8,-16.3,-43.8,-22.1C-34.9,-27.8,-27.4,-31.1,-20.3,-39.8C-13.2,-48.6,-6.6,-62.8,2.1,-66.5C10.8,-70.1,21.7,-63.2,32.6,-56.7Z"
-                  transform="translate(100 100) scale(1.0)" />
+          <a href="#" class="text-base font-semibold bg-primary rounded-md py-3 px-5 text-white hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out">Hubungi saya</a>
+        </div>
+        <div class="w-full self-end px-4 lg:w-1/2"">
+          <div class="relative mt-10 lg:mt-9 lg:right-0">
+            <img src="image/rifal-nurjamil.png" class="relative z-10  max-w-full mx-auto" width="400" height="400">
+            <span class="absolute lg:-bottom-3 left-1/2 -translate-x-1/2 md:scale-125 -bottom-6">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="500" height="500">
+                <path fill="#14b8a6" d="M32.6,-56.7C43.5,-50.1,54.5,-44,62.1,-34.6C69.7,-25.2,73.8,-12.6,68.1,-3.3C62.4,6,46.7,12,40.9,24.4C35.1,36.9,39.2,55.9,34,66C28.8,76.2,14.4,77.6,4.7,69.4C-5,61.2,-9.9,43.5,-17.4,34.6C-24.8,25.8,-34.8,25.8,-44.5,21.5C-54.3,17.2,-63.8,8.6,-63.4,0.2C-63.1,-8.2,-52.8,-16.3,-43.8,-22.1C-34.9,-27.8,-27.4,-31.1,-20.3,-39.8C-13.2,-48.6,-6.6,-62.8,2.1,-66.5C10.8,-70.1,21.7,-63.2,32.6,-56.7Z" transform="translate(100 100) scale(1.0)" />
               </svg>
             </span>
           </div>
@@ -138,31 +94,18 @@
     </section>
     <!-- end Hero section -->
 
-    <!-- About section -->
-    <section id="about" class="pt-36 pb-32">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="mb-10 w-full px-4 lg:w-1/2">
-            <h4 class="mb-2 text-lg font-bold uppercase text-primary">
-              Tentang Saya
-            </h4>
-            <h2 class="mb-5 max-w-md text-3xl font-bold lg:text-4xl">
-              Yuk, Hire di Nawcodes
-            </h2>
-            <p class="max-w-xl text-base font-medium text-secondary">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
-              voluptates aperiam autem eaque quos?
-            </p>
-          </div>
-          <div class="w-full px-4 lg:w-1/2">
-            <h3
-              class="mb-4 text-2xl font-semibold text-dark lg:pt-9 lg:text-3xl">
-              Mari berteman
-            </h3>
-            <p class="mb-6 text-base font-medium text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quo
-              accusantium, impedit minus harum natus iusto.
-            </p>
+  <!-- About section -->
+  <section id="about" class="pt-36 pb-32 dark:bg-dark">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 mb-10 lg:w-1/2">
+          <h4 class="font-bold uppercase text-primary text-lg mb-2">Tentang Saya</h4>
+          <h2 class="font-bold lg:text-4xl text-3xl mb-5 max-w-md dark:text-white">Yuk, Hire di Nawcodes</h2>
+          <p class="font-medium text-base text-secondary max-w-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim voluptates aperiam autem eaque quos?</p>
+        </div>
+        <div class="w-full px-4 lg:w-1/2">
+          <h3 class="font-semibold text-dark lg:pt-9 lg:text-3xl text-2xl mb-4 dark:text-white">Mari berteman</h3>
+          <p class="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quo accusantium, impedit minus harum natus iusto.</p>
 
             <div class="flex">
               <!-- Linkedin -->
@@ -244,15 +187,14 @@
 
     <!-- Portfolio section -->
 
-    <section id="portfolio" class="bg-slate-100 pt-36 pb-16">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-xl font-semibold text-primary">Portfolio</h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl">
-              Project Terbaru
-            </h2>
+  <section id="portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="max-w-xl mx-auto text-center mb-16">
+          <h4 class="font-semibold text-primary text-xl mb-2">Portfolio</h4>
+          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">
+            Project Terbaru
+          </h2>
 
             <div class="text-md font-medium text-secondary md:text-lg">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
@@ -261,59 +203,48 @@
           </div>
         </div>
 
-        <div class="flex w-full flex-wrap justify-center xl:mx-auto xl:w-10/12">
-          <div class="mb-12 p-4 md:w-1/3">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img src="https://placehold.co/600x300" alt="" width="w-full" />
-            </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
-              My Website
-            </h3>
-            <p class="text-base font-medium text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              minima voluptate rem excepturi beatae exercitationem expedita.
-            </p>
+      <div class="w-full flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+        <div class="mb-12 p-4 md:w-1/3">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <img src="https://placehold.co/600x300" alt="" width="w-full">
           </div>
-          <div class="mb-12 p-4 md:w-1/3">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img src="https://placehold.co/600x300" alt="" width="w-full" />
-            </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
-              My Website
-            </h3>
-            <p class="text-base font-medium text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              minima voluptate rem excepturi beatae exercitationem expedita.
-            </p>
+          <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">My Website</h3>
+          <p class="font-medium text-base text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima voluptate rem excepturi beatae exercitationem expedita.
+          </p>
+        </div>
+        <div class="mb-12 p-4 md:w-1/3">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <img src="https://placehold.co/600x300" alt="" width="w-full">
           </div>
-          <div class="mb-12 p-4 md:w-1/3">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img src="https://placehold.co/600x300" alt="" width="w-full" />
-            </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
-              My Website
-            </h3>
-            <p class="text-base font-medium text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              minima voluptate rem excepturi beatae exercitationem expedita.
-            </p>
+          <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">My Website</h3>
+          <p class="font-medium text-base text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima voluptate rem excepturi beatae exercitationem expedita.
+          </p>
+        </div>
+        <div class="mb-12 p-4 md:w-1/3">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <img src="https://placehold.co/600x300" alt="" width="w-full">
           </div>
+          <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">My Website</h3>
+          <p class="font-medium text-base text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima voluptate rem excepturi beatae exercitationem expedita.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- End Portfolio section -->
 
-    <!-- Clients -->
-    <section id="clients" class="bg-slate-700 pt-36 pb-32">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto mb-16 text-center">
-            <h4 class="mb-3 text-xl font-semibold text-primary">Klien</h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-              Yang Pernah Bekerjasama
-            </h2>
+  <!-- Clients -->
+  <section id="clients" class="pt-36 pb-32 bg-slate-700 dark:bg-slate-300">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="mx-auto text-center mb-16">
+          <h4 class="font-semibold text-primary text-xl mb-3">Klien</h4>
+          <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-dark">
+            Yang Pernah Bekerjasama
+          </h2>
 
             <div class="text-md font-medium text-secondary md:text-lg">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
@@ -346,16 +277,15 @@
 
     <!-- End Clients -->
 
-    <!-- Contact -->
-    <section id="contact" class="pt-36 pb-32">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-xl font-semibold text-primary">Kontak</h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl">
-              Hubungi Saya
-            </h2>
+  <!-- Contact -->
+  <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="max-w-xl mx-auto text-center mb-16">
+          <h4 class="font-semibold text-primary text-xl mb-2 ">Kontak</h4>
+          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">
+            Hubungi Saya
+          </h2>
 
             <div class="text-md font-medium text-secondary md:text-lg">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
@@ -572,20 +502,45 @@
       </div>
     </footer>
     <!-- End Footer -->
+  <!-- Back to top toogle -->
+    <a href="#home" id="backtop-toogle" class="fixed flex justify-center items-center bg-primary p-4 w-12 h-12 rounded-full z-[9999] bottom-4 right-4 hover:animate-pulse hidden">
+      <span class="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+    </a>
+  <!-- End toogle -->
+
 
     <script>
       // navbar
       window.onscroll = () => {
         const headerEl = document.querySelector("header");
         const fixedNavValue = headerEl.offsetTop;
+      const backtopToogle = document.querySelector('#backtop-toogle')
 
         if (window.pageYOffset > fixedNavValue) {
           headerEl.classList.add("navbar-fixed");
-        } else {
+          backtopToogle.classList.remove('hidden');
+
+      } else {
           headerEl.classList.remove("navbar-fixed");
-        }
+          backtopToogle.classList.add('hidden');
+
+      }
       };
 
+    // hamburger menu
+    const hamburgerEl = document.getElementById('hamburger');
+    const navMenuEl = document.getElementById('nav-menu');
+    hamburgerEl.addEventListener('click', () => {
+      hamburgerEl.classList.toggle('hamburger-active');
+      navMenuEl.classList.toggle('hidden');
+    });
+
+    window.addEventListener('click', function(e) {
+      if(e.target != hamburgerEl && e.target != navMenuEl) {
+        hamburgerEl.classList.remove('hamburger-active');
+        navMenuEl.classList.add('hidden');
+      }
+    })
       // hamburger menu
       const hamburgerEl = document.getElementById("hamburger");
       const navMenuEl = document.getElementById("nav-menu");
@@ -600,6 +555,24 @@
       servicesListEl.querySelectorAll("a").forEach((el) => {
         el.classList.add("link-disabled");
       });
-    </script>
+  
+    // Dark mode
+
+    const darkToggle = document.querySelector('#dark-toogle');
+    const html = document.querySelector('html')
+
+    darkToggle.addEventListener('click', () => {
+      console.log('true')
+      if(darkToggle.checked) {
+         html.classList.add('dark')
+      }  else {
+        html.classList.remove('dark')
+      } 
+    });
+
+    
+
+
+  </script>
   </body>
 </html>

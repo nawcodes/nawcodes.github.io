@@ -33,8 +33,19 @@ body {
     @apply -rotate-45
 }
 
-/*dark toogle */
+/*dark toggle */
 
+.dark-icon {
+    @apply hover:border border-slate-300 text-slate-600 hover:border-primary hover:bg-dark hover:text-white;
+}
+
+.light-icon {
+    @apply hover:border border-slate-800 text-yellow-400 hover:border-primary hover:bg-white hover:text-yellow-400;
+}
+
+
+/* 
 #dark-toogle:checked ~ label div.toogle-circle {
 	@apply translate-x-3
-}
+} */
+

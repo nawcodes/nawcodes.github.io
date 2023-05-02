@@ -237,22 +237,14 @@
         </div>
 
         <div class="w-full px-4">
-          <div class="flex flex-wrap items-center justify-center">
-            <a
-              href="#"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-6">
-              <img src="/image/kaggle.svg" alt="Kaggle" width="500" />
-            </a>
-            <a
-              href="#"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-6">
-              <img src="/image/kaggle.svg" alt="Kaggle" width="500" />
-            </a>
-            <a
-              href="#"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-6">
-              <img src="/image/kaggle.svg" alt="Kaggle" width="500" />
-            </a>
+          <div class="flex flex-wrap items-center justify-center" x-data="{clients: []}" x-init="clients = window.clientsPayload">
+            <template x-for="(client, index) in clients" :key="index">
+              <a
+                href="#"
+                class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-6">
+                <img src="/image/kaggle.svg" alt="Kaggle" width="500" />
+              </a>
+            </template>
           </div>
         </div>
       </div>

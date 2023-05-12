@@ -30,12 +30,38 @@ window.skillPayload = [
     {
         name: 'skill1',
         image: 'image1',
-        score: 1
+        score: 1,
+        type: 'backend'
     },
     {
         name: 'skill2',
         image: 'image2',
-        score: 2
+        score: 2,
+        type: 'frontend'
+    },
+    {
+        name: 'skill3',
+        image: 'image3',
+        score: 3,
+        type: 'tools'
+    },
+    {
+        name: 'skill4',
+        image: 'image4',
+        score: 4,
+        type: 'others'
+    },
+    {
+        name: 'others',
+        image: 'image4',
+        score: 4,
+        type: 'others'
+    },
+    {
+        name: 'tools',
+        image: 'image3',
+        score: 3,
+        type: 'tools'
     },
 ]
 

@@ -23,6 +23,10 @@ window.clientsPayload = [
         name: 'client2',
         thumb: 'logo2',
     },
+    {
+        name: 'client2',
+        thumb: 'logo2',
+    },
 ]
 
 

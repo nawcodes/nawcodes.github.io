@@ -1,7 +1,3 @@
-// Hamburger action
-const hamburgerEl = docuement.getElementById('hamburger');
-
-hamburgerEl.addEventListener('click', () => {
-    console.log('Hamburger clicked');
-    // hamburgerEl.classList.toggle('hamburger-active');
-});
+// console.log(skillPayload);
+// Checkpoint
+// Alpine has been loaded, so we can start using it.

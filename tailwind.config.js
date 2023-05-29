@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#14b8a6',
-        dark: '#0d7377',
+        dark: '#0f172a',
         secondary: '#64748b',
       },
       screens: {
@@ -18,5 +18,6 @@ module.exports = {
       }
     }
   },
-  plugins: [],
+  darkMode: 'class',
+  plugins: [require('prettier-plugin-tailwindcss')],
 }

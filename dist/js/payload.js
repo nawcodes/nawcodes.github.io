@@ -177,15 +177,23 @@ window.skillPayload = [
 
 window.clientsPayload = [
     {
-        name: 'client1',
+        name: 'Whatspie',
         thumb: 'logo1',
     },
     {
-        name: 'client2',
+        name: 'Meefx',
         thumb: 'logo2',
     },
     {
-        name: 'client2',
+        name: 'Baracoal Indonesia',
+        thumb: 'logo2',
+    },
+    {
+        name: 'Bagi Bagi',
+        thumb: 'logo2',
+    },
+    {
+        name: 'Juno Market',
         thumb: 'logo2',
     },
 ]

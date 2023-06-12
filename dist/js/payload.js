@@ -39,6 +39,142 @@ window.projectPayload = [
 ]
 
 
+window.skillPayload = [
+    {
+        name: 'NodeJS',
+        image: 'image1',
+        score: 3.5,
+        type: 'backend'
+    },
+    {
+        name: 'VueJS',
+        image: 'image1',
+        score: 3.5,
+        type: 'frontend'
+    },
+    {
+        name: 'Laravel',
+        image: 'image1',
+        score: 4,
+        type: 'backend'
+    },
+    {
+        name: 'Codeigniter',
+        image: 'image1',
+        score: 4,
+        type: 'backend'
+    },
+    {
+        name: 'PHP',
+        image: 'image1',
+        score: 4,
+        type: 'backend'
+    },
+    {
+        name: 'TypeScript',
+        image: 'image1',
+        score: 3.5,
+        type: 'backend'
+    },
+    {
+        name: 'Express',
+        image: 'image1',
+        score: 3.5,
+        type: 'backend'
+    },
+    {
+        name: 'JavaScript',
+        image: 'image1',
+        score: 3.5,
+        type: 'frontend'
+    },
+    {
+        name: 'CSS',
+        image: 'image1',
+        score: 3.5,
+        type: 'frontend'
+    },
+    {
+        name: 'Bootstrap',
+        image: 'image1',
+        score: 4,
+        type: 'frontend'
+    },
+    {
+        name: 'Tailwind CSS',
+        image: 'image1',
+        score: 3.5,
+        type: 'frontend'
+    },
+    {
+        name: 'AlpineJS',
+        image: 'image1',
+        score: 3.5,
+        type: 'frontend'
+    },
+    {
+        name: 'HTML',
+        image: 'image4',
+        score: 4,
+        type: 'others'
+    },
+    {
+        name: 'English Language - passive',
+        image: 'image4',
+        score: 4,
+        type: 'others'
+    },
+    {
+        name: 'SQL Server',
+        image: 'image4',
+        score: 3.5,
+        type: 'others'
+    },
+    {
+        name: 'PostgreSQL',
+        image: 'image4',
+        score: 3.5,
+        type: 'others'
+    },
+    {
+        name: 'MySQL',
+        image: 'image4',
+        score: 3.5,
+        type: 'others'
+    },
+    {
+        name: 'MongoDB - NoSQL',
+        image: 'image4',
+        score: 3.5,
+        type: 'others'
+    },
+    {
+        name: 'VS Code',
+        image: 'image3',
+        score: 3.5,
+        type: 'tools'
+    },
+    {
+        name: 'Figma',
+        image: 'image3',
+        score: 3.5,
+        type: 'tools'
+    },
+    {
+        name: 'Git',
+        image: 'image3',
+        score: 3.5,
+        type: 'tools'
+    },
+    {
+        name: 'DBeaver',
+        image: 'image3',
+        score: 3.5,
+        type: 'tools'
+    },
+        
+]
+
 window.clientsPayload = [
     {
         name: 'client1',
@@ -54,45 +190,6 @@ window.clientsPayload = [
     },
 ]
 
-
-window.skillPayload = [
-    {
-        name: 'skill1',
-        image: 'image1',
-        score: 1,
-        type: 'backend'
-    },
-    {
-        name: 'skill2',
-        image: 'image2',
-        score: 2,
-        type: 'frontend'
-    },
-    {
-        name: 'skill3',
-        image: 'image3',
-        score: 3,
-        type: 'tools'
-    },
-    {
-        name: 'skill4',
-        image: 'image4',
-        score: 4,
-        type: 'others'
-    },
-    {
-        name: 'others',
-        image: 'image4',
-        score: 4,
-        type: 'others'
-    },
-    {
-        name: 'tools',
-        image: 'image3',
-        score: 3,
-        type: 'tools'
-    },
-]
 
 
 

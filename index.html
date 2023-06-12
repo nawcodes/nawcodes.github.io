@@ -406,8 +406,8 @@
               <div class="py-2 sm:w-full md:w-1/5">
                 <h6
                   class="mb-2 text-center font-semibold text-primary"
-                  x-text="type"></h6>
-                <div class="flex sm:flex-row md:flex-col">
+                  x-text="type.charAt(0).toUpperCase() + type.slice(1)" class=""></h6>
+                <div class="flex sm:flex-row flex-wrap md:flex-col">
                   <template x-for="skill in group" :key="skill.name">
                     <div class="mx-auto p-1">
                       <p x-text="skill.name"></p>

@@ -124,7 +124,7 @@
             </h1>
             <h2
               class="mb-1 text-lg font-medium text-slate-500 dark:text-white lg:text-2xl">
-              Backend Developer
+              Software Enginer | Backend Developer | Junior Entrepreneur
             </h2>
             <p
               class="mb-10 font-medium leading-relaxed text-slate-400 dark:text-white">
@@ -359,7 +359,7 @@
           <template x-for="(project, index) in projects" :key="index">
             <div class="mb-12 p-4 md:w-1/3">
               <div class="overflow-hidden rounded-md shadow-md">
-                <img src="https://placehold.co/600x300" alt="" width="w-full" />
+                <img :src="`image/${project.image}`" alt="" width="w-full" />
               </div>
               <h3
                 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"

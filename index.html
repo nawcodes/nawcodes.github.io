@@ -448,9 +448,9 @@
             x-init="clients = window.clientsPayload">
             <template x-for="(client, index) in clients" :key="index">
               <a
-                href="#"
+                :href="`${client.link}`" target="_blank"
                 class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-6">
-                <img src="/image/kaggle.svg" alt="Kaggle" width="500" />
+                <img :src="`image/${client.thumb}`" alt="Kaggle" width="500" />
               </a>
             </template>
           </div>

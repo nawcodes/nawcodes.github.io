@@ -182,23 +182,24 @@ window.skillPayload = [
 window.clientsPayload = [
     {
         name: 'Whatspie',
-        thumb: 'logo1',
+        thumb: 'whatspie.png',
+        link: 'https://whatspie.com/'
     },
     {
         name: 'Meefx',
-        thumb: 'logo2',
+        thumb: 'meefx.png',
+        link: 'https://meefx.com/en/',
     },
     {
         name: 'Baracoal Indonesia',
-        thumb: 'logo2',
-    },
-    {
-        name: 'Bagi Bagi',
-        thumb: 'logo2',
+        thumb: 'baracoal.png',
+        link: 'https://www.baracoal.com/'
     },
     {
         name: 'Juno Market',
-        thumb: 'logo2',
+        thumb: 'junomarkets.png',
+        link: 'https://www.junomarkets.com'
+        
     },
 ]
 

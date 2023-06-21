@@ -13,6 +13,17 @@
     </style>
     <script src="//unpkg.com/alpinejs" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
   </head>
   <body>
     <!-- Header section -->
@@ -217,8 +228,8 @@
             </h3>
 
             <ol
-              class="mb-4 relative border-l border-gray-200 bg-slate-300 p-2 dark:border-gray-700">
-              <li class="mb-10 ml-6"> 
+              class="relative mb-4 border-l border-gray-200 bg-slate-300 p-2 dark:border-gray-700">
+              <li class="mb-10 ml-6">
                 <span
                   class="dark:grey-900 dark-blue-900 absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-8 ring-white">
                   <svg
@@ -233,14 +244,30 @@
                       clip-rule="evenodd"></path>
                   </svg>
                 </span>
-                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                <h3
+                  class="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Dolore, quis.
-                  <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">Lorem</span>
+                  <span
+                    class="mr-2 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800"
+                    >Lorem</span
+                  >
                 </h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-gray-400">2023</time>
-                <p class="mb-4 text-base font-normal text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint, doloremque incidunt exercitationem nam libero excepturi non voluptate, aut iste ad voluptas. A beatae minus totam explicabo voluptate dicta aliquid?</p>
-                <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700">Lihat</a>
+                <time
+                  class="mb-2 block text-sm font-normal leading-none text-gray-400"
+                  >2023</time
+                >
+                <p class="mb-4 text-base font-normal text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  sint, doloremque incidunt exercitationem nam libero excepturi
+                  non voluptate, aut iste ad voluptas. A beatae minus totam
+                  explicabo voluptate dicta aliquid?
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:outline-none focus:ring-4 focus:ring-gray-200"
+                  >Lihat</a
+                >
               </li>
               <li>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
@@ -406,11 +433,14 @@
               <div class="py-2 sm:w-full md:w-1/5">
                 <h6
                   class="mb-2 text-center font-semibold text-primary"
-                  x-text="type.charAt(0).toUpperCase() + type.slice(1)" class=""></h6>
-                <div class="flex sm:flex-row flex-wrap md:flex-col">
+                  x-text="type.charAt(0).toUpperCase() + type.slice(1)"
+                  class=""></h6>
+                <div class="flex flex-wrap sm:flex-row md:flex-col">
                   <template x-for="skill in group" :key="skill.name">
                     <div class="mx-auto p-1">
-                      <p class="bg-slate-300 p-2 rounded" x-text="skill.name"></p>
+                      <p
+                        class="rounded bg-slate-300 p-2"
+                        x-text="skill.name"></p>
                       <!-- <img src="https://placehold.co/50" alt="" /> -->
                     </div>
                   </template>
@@ -448,7 +478,8 @@
             x-init="clients = window.clientsPayload">
             <template x-for="(client, index) in clients" :key="index">
               <a
-                :href="`${client.link}`" target="_blank"
+                :href="`${client.link}`"
+                target="_blank"
                 class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-6">
                 <img :src="`image/${client.thumb}`" alt="Kaggle" width="500" />
               </a>
@@ -732,24 +763,37 @@
 
       const html = document.querySelector("html");
 
-      darkToggle.addEventListener("click", () => {
-        html.classList.toggle("dark");
-
-        if (html.classList.contains("dark")) {
-          // Show Icon SUn
-          localStorage.setItem("dark-mode", "on");
-          darkToggle.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fill-current text-yellow-400">
+      let darkEl = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" class="fill-current" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                  </svg>`;
+      let sunEl = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fill-current text-yellow-400">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
                               </svg>`;
+
+      darkToggle.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        if (html.classList.contains("dark")) {
+          // Show Icon SUn
+          localStorage.setItem("theme", "dark");
+          darkToggle.innerHTML = sunEl;
           darkToggle.classList.toggle("dark-icon light-icon");
         } else {
           // Show icon moon
-          localStorage.setItem("dark-mode", "off");
-          darkToggle.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="fill-current" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-                  </svg>`;
+          localStorage.setItem("theme", "light");
+          darkToggle.innerHTML = darkEl;
         }
       });
+
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        darkToggle.innerHTML = sunEl;
+      } else {
+        darkToggle.innerHTML = darkEl;
+      }
+
     </script>
   </body>
 </html>

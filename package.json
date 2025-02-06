@@ -1,24 +1,30 @@
 {
-  "name": "nawcodes.github.io",
-  "version": "1.0.0",
-  "description": "portfolio",
-  "main": "index.js",
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nawcodes/nawcodes.github.io.git"
+  "dependencies": {
+    "framer-motion": "^12.3.1",
+    "motion": "^12.3.1",
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0"
   },
-  "author": "rifal nurjamil - nawcodes",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nawcodes/nawcodes.github.io/issues"
-  },
-  "homepage": "https://github.com/nawcodes/nawcodes.github.io#readme",
   "devDependencies": {
-    "prettier": "^2.8.7",
-    "prettier-plugin-tailwindcss": "^0.2.5",
-    "tailwindcss": "^3.2.7"
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }

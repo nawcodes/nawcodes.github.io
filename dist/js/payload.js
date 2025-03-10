@@ -114,43 +114,149 @@ window.clientsPayload = [
 
 
 window.skillPayload = [
+    // Backend Skills
     {
-        name: 'skill1',
-        image: 'image1',
-        score: 1,
-        type: 'backend'
+        name: "PHP",
+        type: "Backend",
+        icon: "https://placehold.co/50x50"
     },
     {
-        name: 'skill2',
-        image: 'image2',
-        score: 2,
-        type: 'frontend'
+        name: "Laravel",
+        type: "Backend",
+        icon: "https://placehold.co/50x50"
     },
     {
-        name: 'skill3',
-        image: 'image3',
-        score: 3,
-        type: 'tools'
+        name: "CodeIgniter",
+        type: "Backend",
+        icon: "https://placehold.co/50x50"
     },
     {
-        name: 'skill4',
-        image: 'image4',
-        score: 4,
-        type: 'others'
+        name: "WordPress",
+        type: "Backend",
+        icon: "https://placehold.co/50x50"
     },
     {
-        name: 'others',
-        image: 'image4',
-        score: 4,
-        type: 'others'
+        name: "NodeJS",
+        type: "Backend",
+        icon: "https://placehold.co/50x50"
     },
     {
-        name: 'tools',
-        image: 'image3',
-        score: 3,
-        type: 'tools'
+        name: "NestJS",
+        type: "Backend",
+        icon: "https://placehold.co/50x50"
     },
-]
+    {
+        name: "Golang",
+        type: "Backend",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "Python",
+        type: "Backend",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "Django",
+        type: "Backend",
+        icon: "https://placehold.co/50x50"
+    },
+
+    // Frontend Skills
+    {
+        name: "CSS",
+        type: "Frontend",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "Bootstrap",
+        type: "Frontend",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "Tailwind",
+        type: "Frontend",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "React",
+        type: "Frontend",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "NextJS",
+        type: "Frontend",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "JavaScript",
+        type: "Frontend",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "Vue",
+        type: "Frontend",
+        icon: "https://placehold.co/50x50"
+    },
+
+    // Database Skills
+    {
+        name: "MySQL",
+        type: "Database",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "SQL Server",
+        type: "Database",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "PostgreSQL",
+        type: "Database",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "MongoDB",
+        type: "Database",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "SQLite",
+        type: "Database",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "NoSQL",
+        type: "Database",
+        icon: "https://placehold.co/50x50"
+    },
+
+    // Tools Skills
+    {
+        name: "Git",
+        type: "Tools",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "DBeaver",
+        type: "Tools",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "Ubuntu Server",
+        type: "Tools",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "VSCode",
+        type: "Tools",
+        icon: "https://placehold.co/50x50"
+    },
+    {
+        name: "Power BI",
+        type: "Tools",
+        icon: "https://placehold.co/50x50"
+    }
+];
 
 
 

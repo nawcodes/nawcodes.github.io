@@ -258,5 +258,49 @@ window.skillPayload = [
     }
 ];
 
+// Certificates Data
+window.certificatesPayload = [
+  {
+    id: 1,
+    name: "AWS Cloud Practitioner",
+    issuer: "Amazon Web Services",
+    date: "2023",
+    image: "https://placehold.co/600x400/14b8a6/ffffff?text=AWS+Certificate",
+    description: "Cloud computing fundamentals and AWS services certification"
+  },
+  {
+    id: 2,
+    name: "Professional Backend Developer",
+    issuer: "Dicoding Indonesia",
+    date: "2023",
+    image: "https://placehold.co/600x400/14b8a6/ffffff?text=Backend+Certificate",
+    description: "Backend development with modern technologies and best practices"
+  },
+  {
+    id: 3,
+    name: "Laravel Expert",
+    issuer: "BuildWithAngga",
+    date: "2022",
+    image: "https://placehold.co/600x400/14b8a6/ffffff?text=Laravel+Certificate",
+    description: "Advanced Laravel development and application architecture"
+  },
+  {
+    id: 4,
+    name: "Database Design Master",
+    issuer: "Udemy",
+    date: "2022",
+    image: "https://placehold.co/600x400/14b8a6/ffffff?text=Database+Certificate",
+    description: "Database design principles and implementation strategies"
+  },
+  {
+    id: 5,
+    name: "Web Security Specialist",
+    issuer: "Coursera",
+    date: "2022",
+    image: "https://placehold.co/600x400/14b8a6/ffffff?text=Security+Certificate",
+    description: "Web application security and vulnerability assessment"
+  }
+];
+
 
 

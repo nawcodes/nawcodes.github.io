@@ -14,15 +14,30 @@ const projects = [
         name: "Task Management App",
         description: "Aplikasi manajemen tugas dengan Vue.js dan Firebase",
         image: "https://placehold.co/600x300"
+    },
+    {
+        name: "Blog Platform",
+        description: "Platform blog dengan Next.js dan Headless CMS",
+        image: "https://placehold.co/600x300"
+    },
+    {
+        name: "Mobile App",
+        description: "Aplikasi mobile dengan React Native dan Firebase",
+        image: "https://placehold.co/600x300"
     }
 ];
 
 // Fungsi untuk menampilkan portfolio
 function displayPortfolio() {
     const container = document.getElementById('portfolio-container');
-    
-    projects.forEach(project => {
-        const portfolioItem = `
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    const showLessBtn = document.getElementById('show-less-btn');
+    const itemsPerPage = 3;
+    let currentItems = 0;
+
+    // Fungsi untuk membuat item portfolio HTML
+    function createPortfolioItem(project) {
+        return `
             <div class="mb-12 p-4 md:w-1/3">
                 <div class="overflow-hidden rounded-md shadow-md">
                     <img src="${project.image}" alt="${project.name}" width="w-full" />
@@ -35,7 +50,47 @@ function displayPortfolio() {
                 </p>
             </div>
         `;
-        container.innerHTML += portfolioItem;
+    }
+
+    // Fungsi untuk menampilkan items
+    function showItems(startIndex, endIndex) {
+        container.innerHTML = ''; // Clear container
+        for(let i = 0; i < endIndex && i < projects.length; i++) {
+            container.innerHTML += createPortfolioItem(projects[i]);
+        }
+        currentItems = endIndex;
+
+        // Toggle button visibility
+        if (currentItems >= projects.length) {
+            loadMoreBtn.classList.add('hidden');
+            showLessBtn.classList.remove('hidden');
+        } else {
+            loadMoreBtn.classList.remove('hidden');
+            showLessBtn.classList.add('hidden');
+        }
+
+        // If showing initial items, hide show less button
+        if (currentItems <= itemsPerPage) {
+            showLessBtn.classList.add('hidden');
+        }
+    }
+
+    // Tampilkan 3 item pertama
+    showItems(0, itemsPerPage);
+
+    // Tampilkan tombol "Lihat Lainnya" jika ada lebih dari 3 project
+    if (projects.length > itemsPerPage) {
+        loadMoreBtn.classList.remove('hidden');
+    }
+
+    // Event listener untuk tombol "Lihat Lainnya"
+    loadMoreBtn.addEventListener('click', () => {
+        showItems(0, projects.length);
+    });
+
+    // Event listener untuk tombol "Sembunyikan"
+    showLessBtn.addEventListener('click', () => {
+        showItems(0, itemsPerPage);
     });
 }
 

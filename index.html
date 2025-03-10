@@ -268,18 +268,13 @@
 
     <!-- Portfolio section -->
     <section id="portfolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
-      <div
-        class="container"
-        x-data="{projects: []}"
-        x-init="projects = window.projectPayload">
+      <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-xl font-semibold text-primary">Portfolio</h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
               Project Terbaru
             </h2>
-
             <div class="text-md font-medium text-secondary md:text-lg">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
               illo vero fugit quo ipsam, tempora architecto.
@@ -287,25 +282,8 @@
           </div>
         </div>
 
-        <div class="flex w-full flex-wrap justify-center xl:mx-auto xl:w-10/12">
-          <template x-for="(project, index) in projects" :key="index">
-            <div class="mb-12 p-4 md:w-1/3">
-              <div class="overflow-hidden rounded-md shadow-md">
-                <img src="https://placehold.co/600x300" alt="" width="w-full" />
-              </div>
-              <h3
-                class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
-                x-text="project.name">
-                My Website
-              </h3>
-              <p
-                class="text-base font-medium text-secondary"
-                x-text="project.description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                minima voluptate rem excepturi beatae exercitationem expedita.
-              </p>
-            </div>
-          </template>
+        <div class="flex w-full flex-wrap justify-center xl:mx-auto xl:w-10/12" id="portfolio-container">
+          <!-- Portfolio items will be inserted here by JavaScript -->
         </div>
       </div>
     </section>

@@ -297,7 +297,7 @@ window.certificatesPayload = [
     name: "Web Security Specialist",
     issuer: "Coursera",
     date: "2022",
-    image: "https://placehold.co/600x400/14b8a6/ffffff?text=Security+Certificate",
+    image: "https://placehold.co/100x100/14b8a6/ffffff?text=Security+Certificate",
     description: "Web application security and vulnerability assessment"
   }
 ];

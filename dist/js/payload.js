@@ -118,143 +118,138 @@ window.skillPayload = [
     {
         name: "PHP",
         type: "Backend",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/php.png"
     },
     {
         name: "Laravel",
         type: "Backend",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/laravel.png"
     },
     {
         name: "CodeIgniter",
         type: "Backend",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/codeigniter.png"
     },
     {
         name: "WordPress",
         type: "Backend",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/wordpress.jpg"
     },
     {
         name: "NodeJS",
         type: "Backend",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/nodejs.png"
     },
     {
         name: "NestJS",
         type: "Backend",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/nestjs.png"
     },
     {
         name: "Golang",
         type: "Backend",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/golang.png"
     },
     {
         name: "Python",
         type: "Backend",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/python.png"
     },
     {
         name: "Django",
         type: "Backend",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/django.png"
     },
 
     // Frontend Skills
     {
         name: "CSS",
         type: "Frontend",
-        icon: "https://placehold.co/50x50"
-    },
-    {
-        name: "Bootstrap",
-        type: "Frontend",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/css.png"
     },
     {
         name: "Tailwind",
         type: "Frontend",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/tailwind.png"
     },
     {
         name: "React",
         type: "Frontend",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/react.png"
     },
     {
         name: "NextJS",
         type: "Frontend",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/nextjs.png"
     },
     {
         name: "JavaScript",
         type: "Frontend",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/javascript.png"
     },
     {
         name: "Vue",
         type: "Frontend",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/vue.png"
     },
 
     // Database Skills
     {
         name: "MySQL",
         type: "Database",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/mysql.png"
     },
     {
         name: "SQL Server",
         type: "Database",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/sqlserver.png"
     },
     {
         name: "PostgreSQL",
         type: "Database",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/postgresql.png"
     },
     {
         name: "MongoDB",
         type: "Database",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/mongodb.png"
     },
     {
         name: "SQLite",
         type: "Database",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/sqlite.png"
     },
     {
         name: "NoSQL",
         type: "Database",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/nosql.png"
     },
 
     // Tools Skills
     {
         name: "Git",
         type: "Tools",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/git.png"
     },
     {
         name: "DBeaver",
         type: "Tools",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/dbeaver.png"
     },
     {
         name: "Ubuntu Server",
         type: "Tools",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/ubuntu.png"
     },
     {
         name: "VSCode",
         type: "Tools",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/vscode.png"
     },
     {
         name: "Power BI",
         type: "Tools",
-        icon: "https://placehold.co/50x50"
+        icon: "image/logo/powerbi.png"
     }
 ];
 

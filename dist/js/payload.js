@@ -99,16 +99,16 @@ document.addEventListener('DOMContentLoaded', displayPortfolio);
 
 window.clientsPayload = [
     {
-        name: 'client1',
-        thumb: 'logo1',
+        name: 'MEEFX',
+        thumb: 'image/client_logo/meefx.png',
     },
     {
-        name: 'client2',
-        thumb: 'logo2',
+        name: 'Juno Market',
+        thumb: 'image/client_logo/junomarket.png',
     },
     {
-        name: 'client2',
-        thumb: 'logo2',
+        name: 'BARA ALAM UTAMA',
+        thumb: 'image/client_logo/baracoal.png',
     },
 ]
 

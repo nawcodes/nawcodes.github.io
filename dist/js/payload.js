@@ -1,29 +1,79 @@
 // Data portfolio
 const projects = [
     {
-        name: "Company Profile Website",
-        description: "Website company profile menggunakan Laravel dan Tailwind CSS dengan fitur admin panel",
-        image: "https://placehold.co/600x300"
+        name: "NemaPOS BE - Aplikasi Kasir",
+        description: "Building from scratch",
+        link: "https://play.google.com/store/apps/details?id=com.devhunts.nemapos&pcampaignid=web_share",
+        image: "image/project_logo/commingsoon.png"
     },
     {
-        name: "E-Commerce Platform",
-        description: "Platform e-commerce fullstack dengan Express.js, React, dan MongoDB",
-        image: "https://placehold.co/600x300"
+        name: "BagiBagi E-commerce API",
+        description: "Building from scratch ",
+        image: "image/project_logo/commingsoon.png"
     },
     {
-        name: "Task Management App",
-        description: "Aplikasi manajemen tugas dengan Vue.js dan Firebase",
-        image: "https://placehold.co/600x300"
+        name: "Building Trading Firm - Traders Challenges",
+        description: "Build From Scratch ",
+        image: "image/project_logo/private.png"
     },
     {
-        name: "Blog Platform",
-        description: "Platform blog dengan Next.js dan Headless CMS",
-        image: "https://placehold.co/600x300"
+        name: "KEK Sukabumi",
+        description: "Building from scratch ",
+        image: "image/project_logo/private.png"
     },
     {
-        name: "Mobile App",
-        description: "Aplikasi mobile dengan React Native dan Firebase",
-        image: "https://placehold.co/600x300"
+        name: "Sistem Aplikasi Perhotelan",
+        description: "Maintenance",
+        image: "image/project_logo/private.png"
+    },
+    {
+        name: "Sistem aplikasi pemeliharaan container",
+        description: "Building from scratch",
+        image: "image/project_logo/private.png"
+    },
+    {
+        name: "Sistem aplikasi pemeliharaan mesin",
+        description: "Building from scratch",
+        image: "image/project_logo/private.png"
+    },
+    {
+        name: "Sistem Penggabugan dan Pemisahan Tanah (GIS)",
+        description: "Building from scratch",
+        image: "image/project_logo/commingsoon.png"
+    },
+    {
+        name: "SysAdmin MeefX - Trading Broker",
+        description: "Maintenance",
+        link: "https://meefx.com",
+        image: "image/project_logo/commingsoon.png"
+    },
+    {
+        name: "Whatspie - Sysadmin Whatsapp Tools",
+        description: "Maintenance",
+        link: "https://whatspie.com",
+        image: "image/project_logo/commingsoon.png"
+    },
+    {
+        name: "Whatspie API",
+        description: "Maintenance",
+        link: "https://whatspie.com",
+        image: "image/project_logo/commingsoon.png"
+    },
+    {
+        name: "Whatspie API Documentation",
+        description: "Building from scratch",
+        link: "https://docs.whatspie.com/docs/api/v2",
+        image: "image/project_logo/commingsoon.png"
+    },
+    {
+        name: "Whatspie API V2",
+        description: "Building from scratch",
+        image: "image/project_logo/commingsoon.png"
+    },
+    {
+        name: "Whatspie Node - Core Engine",
+        description: "Maintenance",
+        image: "image/project_logo/commingsoon.png"
     }
 ];
 
@@ -47,6 +97,7 @@ function displayPortfolio() {
                 </h3>
                 <p class="text-base font-medium text-secondary">
                     ${project.description}
+                    ${project.link ? `<a href="${project.link}" target="_blank" class="p-2  text-xs font-medium text-center text-white bg-primary rounded-md hover:bg-primary/80">View Project</a>` : ''}
                 </p>
             </div>
         `;
